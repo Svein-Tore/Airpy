@@ -1,0 +1,2 @@
+#!/bin/bash
+C:/Users/sveinn/PycharmProjects/pythonProject4/venv/Scripts/uflash.exe $1 ; C:/Users/sveinn/PycharmProjects/microbitprosjekt/venv/Scripts/ufs.exe put C:/Users/sveinn/PycharmProjects/microbitprosjekt/airpy.py
