@@ -4,3 +4,6 @@ Dette er et Python bibliotek for å styre en drone med micro.bit og Python kode.
 
 ![Pycharm meny](https://github.com/Svein-Tore/Airpy/blob/master/Pycharm_tools.png)
 
+Om du bruker en annen edtior enn Pycharm sp trenger dub are filene airpy.py, senderkode.py og mottasker_kode.py.
+
+##LYKKE TIL!!
