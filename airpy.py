@@ -20,7 +20,7 @@ def flightcontrol(Throttle=0, Yaw=0, Pitch=0, Roll=0, Aux=0, flightMode=1, Buzze
         Verdiene Throttle, Yaw, Pitch Roll, Aux,flightmode og Buzzer sendes til KK 2.1.5 kortet.\n
         Throttle=gass, øker hastigheten oppover   (0 til 100) \n
         Pitch=Beveger dronen fremover/bakover (-90 til 90) \n
-        Roll=Bevegerdronen mot høyre/vesntre (-90 til 90) \n
+        Roll=Beveger dronen mot høyre/vesntre (-90 til 90) \n
         Yaw=Rotajosn av dronen rundt sin egen akse (-90 til 90) \n
         Aux skal settes lik 0. \n
         FlightMode skal settes lik 1 \n
