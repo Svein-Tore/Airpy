@@ -9,10 +9,10 @@ Yaw=0
 display.set_pixel(0,4,9)
 while True:
 
-    Roll=map(accelerometer.get_x(),-1024,1024,-90,90)
+    Roll=mapping(accelerometer.get_x(),-1024,1024,-90,90)
     if Roll>90: Roll=90
     if Roll<-90: Roll=-90
-    Pitch=map(accelerometer.get_y(),-1024,1024,-90,90)
+    Pitch=mapping(accelerometer.get_y(),-1024,1024,-90,90)
     if Pitch>90: Pitch=90
     if Pitch<-90: Pitch=-90
     if button_a.was_pressed():
@@ -34,7 +34,7 @@ while True:
     display.clear()
     display.set_pixel(2, 0, 9)
     display.set_pixel(4, 4, 9)
-    display.set_pixel(0, map(Throttle, 0, 100, 4, 0), 9)
-    display.set_pixel(map(Roll, -90, 90, 0, 4), map(Pitch, -90, 90, 0, 4), 9)
+    display.set_pixel(0, mapping(Throttle, 0, 100, 4, 0), 9)
+    display.set_pixel(mapping(Roll, -90, 90, 0, 4), map(Pitch, -90, 90, 0, 4), 9)
     sendTekst = str(Pitch)+","+str(Roll)+","+str(Throttle)+","+str(Yaw)
     radio.send(sendTekst)
