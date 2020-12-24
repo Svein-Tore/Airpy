@@ -8,6 +8,7 @@ Roll=0
 Pitch=0
 Throttle=0
 Yaw=0
+Arm=0
 while True:
     display.clear()
     mottatt=radio.receive()
@@ -17,8 +18,9 @@ while True:
         Roll=int(verdier[1])
         Throttle=int(verdier[2])
         Yaw=int(verdier[3])
+        Arm=int(verdier[4])
     display.set_pixel(mapping(Roll, -90, 90, 0, 4), mapping(Pitch, -90, 90, 0, 4), 9)
     display.set_pixel(0, mapping(Throttle, 0, 100, 4, 0), 9)
     display.set_pixel(2,0,9)
     display.set_pixel(4,4,9)
-    flightcontrol(Throttle,Yaw,Pitch,Roll,0,1,0)
+    flightcontrol(Throttle,Yaw,Pitch,Roll,Arm,1,0)
