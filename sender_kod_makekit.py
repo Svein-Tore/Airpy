@@ -31,8 +31,6 @@ while True:
         Arm=1
         sendTekst = str(Pitch)+","+str(Roll)+","+str(Throttle)+","+str(Yaw)+","+str(Arm)
         radio.send(sendTekst)
-        sleep(1000)
-        Yaw=0
     display.clear()
     display.set_pixel(2, 0, 9)
     display.set_pixel(4, 4, 9)
