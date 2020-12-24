@@ -6,7 +6,7 @@ radio.on()
 radio.config(channel=1,power=7)
 Throttle=0
 Yaw=0
-Aux=0
+Arm=0
 display.set_pixel(0,4,9)
 while True:
 
@@ -25,9 +25,10 @@ while True:
     gesture = accelerometer.current_gesture()
     if gesture == "shake":
         Throttle=0
+        Arm=0
     if button_a.is_pressed() and button_b.is_pressed():
         Throttle=0
-        Aux=1
+        Arm=1
         sendTekst = str(Pitch)+","+str(Roll)+","+str(Throttle)+","+str(Yaw)+","+str(Aux)
         radio.send(sendTekst)
         sleep(1000)
