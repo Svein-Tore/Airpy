@@ -35,6 +35,6 @@ while True:
     display.set_pixel(2, 0, 9)
     display.set_pixel(4, 4, 9)
     display.set_pixel(0, mapping(Throttle, 0, 100, 4, 0), 9)
-    display.set_pixel(mapping(Roll, -90, 90, 0, 4), map(Pitch, -90, 90, 0, 4), 9)
+    display.set_pixel(mapping(Roll, -90, 90, 0, 4), mapping(Pitch, -90, 90, 0, 4), 9)
     sendTekst = str(Pitch)+","+str(Roll)+","+str(Throttle)+","+str(Yaw)
     radio.send(sendTekst)
