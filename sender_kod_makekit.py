@@ -6,6 +6,7 @@ radio.on()
 radio.config(channel=1,power=7)
 Throttle=0
 Yaw=0
+Aux=0
 display.set_pixel(0,4,9)
 while True:
 
@@ -26,8 +27,8 @@ while True:
         Throttle=0
     if button_a.is_pressed() and button_b.is_pressed():
         Throttle=0
-        Yaw=-90
-        sendTekst = str(Pitch)+","+str(Roll)+","+str(Throttle)+","+str(Yaw)
+        Aux=1
+        sendTekst = str(Pitch)+","+str(Roll)+","+str(Throttle)+","+str(Yaw)+","+str(Aux)
         radio.send(sendTekst)
         sleep(1000)
         Yaw=0
