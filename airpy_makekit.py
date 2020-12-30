@@ -83,7 +83,7 @@ def flightcontrol(Throttle=0, Yaw=0, Pitch=0, Roll=0, Aux=0, flightMode=1, Buzze
     pitch11 = int(Pitch * scaling + offset)
     roll11 = int(Roll * scaling + offset + 9.5)
     yaw11 = int(Yaw * (scaling + 1.5) + offset)
-    throttle10 = int(2 * scaling + offset / 2.5)
+    throttle10 = int(2 * scaling*Throttle + offset / 2.5)
     flightMode11 = int(flightMode * (scaling + 1.5))
     buf[2] = (0 << 2) | ((roll11 >> 8) & 3)
     buf[3] = roll11 & 255
