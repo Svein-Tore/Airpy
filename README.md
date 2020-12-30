@@ -4,6 +4,6 @@ This is a Python library for controlling a drone with micro.bit and Python code.
 
 ![Pycharm meny](https://github.com/Svein-Tore/Airpy/blob/master/Pycharm_tools.png)
 
-If you use an editor other than PyCharm, you only need the files airpy.py, sender_kode.py and receiver_kode.py.  If you are using Mekikts kits (Hover:bit and Air:bit) you will have tuse the file senderkode_makekit.py and mottakerkode_makekit.py.    
+If you use an editor other than PyCharm, you only need the files airpy.py, sender_kode.py and receiver_kode.py.  If you are using MakeKit's kits (Hover:bit and Air:bit) you will have to use the file sender_kode_makekit.py and mottaker_kode_makekit.py.    
 
 ## Happy flight :smiley:
