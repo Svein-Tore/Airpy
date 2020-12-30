@@ -1,9 +1,9 @@
 # Airpy
-## Micro:bit drone med Python kode
-Dette er et Python bibliotek for å styre en drone med micro.bit og Python kode.  Hvis du åpner dette repository i PyCharm vil du få med verktøyer som gjør at du kan "flashe" programemt direkte til Micro.bit.  Man kan også lagre filer på micro:bit og hente filer fra micro:bit. Du finner disse verktøyene under Tools og External tools:
+## Micro:bit drone with Python kode
+This is a Python library for controlling a drone with micro.bit and Python code. If you open this repository in PyCharm, you will get tools that allow you to "flash" the program directly to Micro.bit. You can also save files on micro: bit and retrieve files from micro: bit. You can find these tools under Tools and External tools:
 
 ![Pycharm meny](https://github.com/Svein-Tore/Airpy/blob/master/Pycharm_tools.png)
 
-Om du bruker en annen editor enn PyCharm så trenger du bare filene airpy.py, sender_kode.py og mottaker_kode.py.
+If you use an editor other than PyCharm, you only need the files airpy.py, sender_kode.py and receiver_kode.py.
 
-## LYKKE TIL :smiley:
+## Happy flight :smiley:
